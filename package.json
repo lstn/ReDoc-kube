@@ -1,0 +1,24 @@
+{
+  "name": "redoc-kube",
+  "version": "0.1.0",
+  "description": "ReDoc nodejs self contained multi-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lstn/ReDoc-kube.git"
+  },
+  "author": "Lucas Estienne",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lstn/ReDoc-kube/issues"
+  },
+  "homepage": "https://github.com/lstn/ReDoc-kube#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mustache-express": "^1.2.8"
+  }
+}
