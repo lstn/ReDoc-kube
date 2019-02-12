@@ -4,10 +4,10 @@ const path = require('path');
 const morgan = require('morgan');
 const mustacheExpress = require('mustache-express');
 
-const PORT = process.env.PORT = 3000;
-const REDOC_VER = process.env.REDOC_VER = '2.0.0-rc.2'
-const API_PATH = process.env.API_PATH = path.join(__dirname, 'apis');
-const API_URLS = process.env.API_URLS = [
+const PORT = process.env.PORT || 3000;
+const REDOC_VER = process.env.REDOC_VER || '2.0.0-rc.2'
+const API_PATH = process.env.API_PATH || path.join(__dirname, 'apis');
+const API_URLS = process.env.API_URLS || [
     { name: "Swagger PetStore", url: "apis/petstore.swagger.yml" },
     { name: "USPTO", url: "apis/uspto.swagger.yml" }
 ]

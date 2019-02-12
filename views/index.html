@@ -48,7 +48,7 @@
       }
       .menu-title {
         display: block;
-        width: 300px;
+        width: 350px;
         height: 40px;
         padding: 12px 0 0;
         background: #9dc852;
@@ -65,8 +65,8 @@
         display: block;
         height: 0;
         border-top: 5px solid #9dc852;
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
+        border-left: 175px solid transparent;
+        border-right: 175px solid transparent;
         border-bottom: 0 solid #dddddd;
         position: absolute;
         top: 100%;
@@ -88,8 +88,8 @@
         content: "";
         display: block;
         height: 0;
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
+        border-left: 175px solid transparent;
+        border-right: 175px solid transparent;
         border-bottom: 0 solid #ebebeb;
         position: absolute;
         bottom: 0;
@@ -128,8 +128,8 @@
         display: block;
         height: 0;
         border-top: 5px solid #ebebeb;
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
+        border-left: 175px solid transparent;
+        border-right: 175px solid transparent;
         position: absolute;
         top: 100%;
         left: 0;
@@ -202,13 +202,7 @@
     <script src="https://cdn.jsdelivr.net/npm/redoc@{{ redoc_ver }}/bundles/redoc.standalone.js"> </script>
     <script>
       // list of APIS
-      var apis = [];
-      {{#api_urls}}
-        apis.push({
-          name: '{{#.}}{{{name}}}{{/.}}',
-          url: '{{#.}}{{{url}}}{{/.}}'
-        });
-      {{/api_urls}}
+      var apis = {{{api_urls}}};
       // initially render first API
       Redoc.init(apis[0].url);
       function onClick() {
